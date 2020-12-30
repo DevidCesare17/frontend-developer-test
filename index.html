@@ -1,23 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />   
-    <meta name="description" content="">
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png">   
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Document title -->
-    <title>DAJE | Home Page</title>
-    <!-- Stylesheets & Fonts -->
-    <link href="css/index.css" rel="stylesheet">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="description" content="">
+      <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Document title -->
+      <title>DAJE | Home Page</title>
+      <!-- Stylesheets & Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <link href="css/index.css" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-</head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="js/script.js"></script>
+    </head>
 
-<body>
-    <!-- Write here the html page content -->
-</body>
+    <body>
+      <!-- HEADER -->
+      <header>
+        <div class="container d_flex head_cont">
+          <div class="hdr_logo">
+            <img src="images/favicon-32x32.png" alt="Logo Daje">
+            <span>DAJE!</span>
+          </div>
+          <div class="hdr_icons">
+            <a class="profile_ic" href="#"><i class="fas fa-user"></i></a>
+            <div class="shopc_ic" href="#"><i class="fas fa-shopping-cart"></i></div>
+          </div>
+          <div class="shop_cart_tog">
+            <p>Il tuo carrello:</p>
+          </div>
+        </div>
+      </header>
+      <!-- /HEADER -->
 
-</html>
+      <!-- MAIN -->
+      <main>
+        <!-- HERO SECTION -->
+        <section id="hero_sct">
+          <div class="container">
+            <div class="hero_desc">
+              <p>La spesa online dai piccoli negozi di quartiere direttamente a casa tua</p>
+              <p>Ricevi a casa tua, in meno di 24 ore, prodotti dai negozi locali che ami in un unico ordine.</p>
+              <small>Verifica la copertura del servizio nella zona</small>
+              <input type="text" placeholder="Inserisci il tuo CAP">
+              <button type="submit">CERCA</button>
+            </div>
+          </div>
+        </section>
+        <!-- /HERO SECTION -->
+
+        <!-- INFO SECTION -->
+        <section id="info_sct">
+          <div class="container">
+            <h3 class="homepage_h3">Come funziona?</h3>
+            <div class="cont_list">
+              <ul class="items_list_desc d_flex">
+                <li class="d_flex">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Scegli il tuo CAP e visita i negozi</span>
+                </li>
+                <li class="d_flex">
+                  <i class="fas fa-users"></i>
+                  <span>Ordina prodotti da tutti i negozi che vuoi</span>
+                </li>
+                <li class="d_flex">
+                  <i class="fas fa-shopping-bag"></i>
+                  <span>Ricevili a casa tua con un'unica spedizione</span>
+                </li>
+              </ul>
+            </div>
+            <a class="redirct_lnk" href="#reviewing_sct">Leggi le recensioni e le domande comuni</a>
+          </div>
+        </section>
+        <!-- /INFO SECTION -->
+
+        <!-- WHY SECTION -->
+        <section id="why_sct">
+          <div class="container">
+            <h3 class="homepage_h3">Perch&eacute; scegliere DAJE?</h3>
+            <div class="d_flex img_lst">
+              <img src="images/home-section.jpeg" alt="Negoziante DAJE">
+              <ul class="numrd_lst">
+                <li>Acquista dai tuoi negozianti di fiducia</li>
+                <li>Ricevi prodotti freschi e di qualit&agrave;</li>
+                <li>Supporta i tesori del tuo quartiere</li>
+              </ul>
+            </div>
+            <a href="#">Scopri di pi&ugrave; sui benefici del fare la spesa con DAJE</a>
+          </div>
+        </section>
+        <!-- /WHY SECTION -->
+
+        <!-- VIEW SECTION -->
+        <section id="view_sct">
+          <div class="container">
+            <h3 class="homepage_h3">Potresti aver visto DAJE su</h3>
+            <ul class="img_spons_lst">
+              <li>
+                <img src="images/logo-corriere-della-sera.png" alt="Logo Corriere della Sera">
+              </li>
+              <li>
+                <img src="images/logo-il-sole-24-ore.png" alt="Logo Sole 24 Ore">
+              </li>
+              <li>
+                <img src="images/logo-millionaire.png" alt="Logo Millionaire">
+              </li>
+              <li>
+                <img src="images/logo-rai-news.png" alt="Logo RaiNews24">
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- /VIEW SECTION -->
+
+        <!-- REVIEWING SECTION -->
+        <section id="reviewing_sct">
+          <div class="container">
+            <h3 class="homepage_h3">Cosa pensano le persone</h3>
+            <div class="d_flex wrap_review">
+              <div class="review_cont">
+                <h5>Chiara</h5>
+                <p>"Servizio impeccabile, spesa arrivata in giornata. In questo momento, una vera e propria salvezza."</p>
+                <ul class="stars_lst d_flex">
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="review_cont">
+                <h5>Ettore</h5>
+                <p>"Sito internet molto intuitivo e facile da consultare. Servizio veloce e prodotti buoni. Assistenza clienti impeccabile. Davvero ottimo!"</p>
+                <ul class="stars_lst d_flex">
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="review_cont">
+                <h5>Lorena</h5>
+                <p>"Servizio comodo, preciso e prodotti di qualit&agrave;, lo consiglio vivamente."</p>
+                <ul class="stars_lst d_flex">
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /REVIEWING SECTION -->
+
+        <!-- FAQ SECTION -->
+        <section id="faq_sct">
+          <div class="container">
+            <h3 class="homepage_h3">Domande frequenti</h3>
+            <ul class="faq_lst">
+              <li>
+                <div class="faq_cont">
+                  <h5>Come funziona la consegna?</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste blanditiis nobis dolorem cum eligendi dicta, tenetur tempora minima assumenda, dolorum iure id voluptates cumque dolor incidunt rerum veniam. Nihil, dolorum!</p>
+                  <a href="#">Link</a>
+                </div>
+              </li>
+              <li>
+                <div class="faq_cont">
+                  <h5>Dove &egrave; attivo il servizio?</h5>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatibus aliquid, enim, distinctio excepturi id esse quasi, delectus unde ex asperiores iste a. Nihil totam sint hic facere atque officiis!</p>
+                  <a href="#">Link</a>
+                </div>
+              </li>
+              <li>
+                <div class="faq_cont">
+                  <h5>Quanto costa il servizio?</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, aliquid voluptas quod reprehenderit adipisci dicta perferendis modi inventore est quae perspiciatis porro cupiditate ducimus a deserunt ex explicabo, minima molestiae.</p>
+                  <a href="#">Link</a>
+                </div>
+              </li>
+              <li>
+                <div class="faq_cont">
+                  <h5>Se qualcosa non va con il mio ordine?</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe asperiores perspiciatis quam incidunt pariatur! Corporis commodi enim et in neque, facilis voluptate deleniti sit reiciendis molestias ipsa fugiat, magni voluptates.</p>
+                  <a href="#">Link</a>
+                </div>
+              </li>
+            </ul>
+            <a class="faq_lnk" href="#contact_us_sct">Hai altre domande? Clicca qui per contattarci: saremo subito da te!</a>
+          </div>
+        </section>
+        <!-- /FAQ SECTION -->
+
+        <!-- CONTACT US SECTION -->
+        <section id="contact_us_sct">
+          <div class="container">
+            <h3 class="homepage_h3">Hai un negozio?</h3>
+            <p>La nostra ambizione &egrave; quella di riuscire a connettere le persone con i negozi del proprio quartiere. Se hai un negozio e vuoi unirti a Daje, o se vuoi solamente richiedere informazioni in merito al funzionamento del servizio, contattaci e saremo felici di spiegarti tutto.</p>
+            <a class="contact_btn" href="#">Contattaci</a>
+          </div>
+        </section>
+        <!-- /CONTACT US SECTION -->
+
+      </main>
+      <!-- /MAIN -->
+
+      <!-- FOOTER -->
+      <footer>
+
+        <div class="container">
+          <div class="d_flex footer_lnks">
+            <div class="hdr_logo">
+              <img src="images/favicon-32x32.png" alt="Logo Daje">
+              <a href="index.html">DAJE!</a>
+            </div>
+            <div class="lst_footer d_flex">
+              <div class="list_who">
+                <h4>Chi siamo</h4>
+                <ul class="lst_item_lnk">
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="list_who">
+                <h4>Contatti</h4>
+                <ul class="lst_item_lnk">
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="list_who">
+                <h4>FAQ</h4>
+                <ul class="lst_item_lnk">
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <small>copyright reserved DAJE!</small>
+          <small class="address_site">Roma, 00000</small>
+        </div>
+
+      </footer>
+      <!-- /FOOTER -->
+
+    </body>
+
+  </html>

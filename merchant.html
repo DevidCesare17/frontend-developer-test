@@ -1,23 +1,361 @@
 <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />   
-    <meta name="description" content="">
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png">   
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Document title -->
-    <title>DAJE | Merchant Page</title>
-    <!-- Stylesheets & Fonts -->
-    <link href="css/index.css" rel="stylesheet">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />   
+      <meta name="description" content="">
+      <link rel="icon" type="image/png" href="images/favicon-32x32.png">   
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Document title -->
+      <title>DAJE | Merchant Page</title>
+      <!-- Stylesheets & Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <link href="css/merchant.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/index.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-</head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="js/script.js"></script>
+    </head>
 
-<body>
-    <!-- Write here the html page content -->
-</body>
+    <body>
+      <!-- HEADER -->
+      <header>
+        <div class="container d_flex head_cont">
+          <div class="hdr_logo">
+            <img src="images/favicon-32x32.png" alt="Logo Daje">
+            <a href="index.html">DAJE!</a>
+          </div>
+          <div class="back_logo_hdr">
+            <a href="index.html"><i class="fas fa-angle-left"></i></a>
+          </div>
+          <div class="hdr_icons">
+            <a class="profile_ic" href="#"><i class="fas fa-user"></i></a>
+            <div class="shopc_ic" href="#"><i class="fas fa-shopping-cart"></i></div>
+          </div>
+          <div class="shop_cart_tog">
+            <p>Il tuo carrello:</p>
+          </div>
+        </div>
+      </header>
+      <!-- /HEADER -->
 
-</html>
+      <!-- MAIN -->
+      <main>
+        <div id="back_top" class="home_cnt_lnk">
+          <a class="home_lnk" href="index.html">TORNA ALLA HOME</a>
+        </div>
+        <!-- SHOP OWNER INFO -->
+        <section id="owner_info_sct">
+          <div class="container contact_cnt">
+            <h3 class="homepage_h3">Gianfranco e Antonella</h3>
+            <small class="address_inf">Mercato San Giovanni di Dio - Box 71</small>
+            <small class="contact_nmb"><i class="fas fa-phone"></i> 333 333 3333</small>
+          </div>
+        </section>
+        <!-- /SHOP OWNER INFO -->
+
+        <!-- CAROUSEL -->
+        <section id="carousel">
+          <div class="container">
+            <div class="img_crs_cont">
+              <div class="prev_img">
+                <i class="fas fa-angle-left"></i>
+              </div>
+              <img class="active first" src="images/merchant-carousel-1.png" alt="Immagine prima">
+              <img src="images/merchant-carousel-2.png" alt="Immagine seconda">
+              <img src="images/merchant-carousel-3.png" alt="Immagine terza">
+              <img class="last" src="images/merchant-carousel-4.png" alt="Immagine quarta">
+              <div class="next_img">
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </div>
+            <div class="point_dir">
+                <img class="active first" src="images/merchant-carousel-1.png" alt="Immagine prima">
+                <img src="images/merchant-carousel-2.png" alt="Immagine seconda">
+                <img src="images/merchant-carousel-3.png" alt="Immagine terza">
+                <img class="last" src="images/merchant-carousel-4.png" alt="Immagine quarta">
+            </div>
+          </div>
+        </section>
+        <!-- /CAROUSEL -->
+
+        <!-- SHOP INFO SECTION -->
+        <section id="shop_info_sct">
+          <div class="container desc_owner">
+            <p>Tantissimi prodotti di qualit&agrave;, da tantissimi anni al mercato San Giovanni di Dio. Abbiamo prodotti di Castelluccio di Norcia per le nostre origini e per promuovere i prodotti dei paesi terremotati. Siamo in contatto in modo diretto con tantissime aziende del posto.</p>
+          </div>
+        </section>
+        <!-- /SHOP INFO SECTION -->
+
+        <!-- PURCHASE PRODUCTS SECTION -->
+        <section id="prch_prod_sct">
+          <!-- offerte -->
+          <div id="offers_title">
+            <div class="container">
+              <h4>Offerte (2)</h4>
+            </div>
+          </div>
+          <div id="offers_lst">
+            <div class="container">
+              <div class="purchase_item">
+                <div class="d_flex select_qnt">
+                  <div class="desc_prod">
+                    <p>Composta Sibilla di Norcia di Albicocca senza zucchero - Vasetto da 350 gr</p>
+                  </div>
+                  <div class="input_nmb d_flex">
+                    <div class="incrmnt_nmb"> + </div>
+                    <input type="number" min="0" value="0">
+                    <div class="decrmnt_nmb"> - </div>
+                  </div>
+                </div>
+                <small>Ingredienti: Albicocche* 70%, concentrato di mele, gelificante: pectina, correttore di acidit&agrave;: acido citrico. *Da agricoltura biologica</small>
+                <span class="old_price">&euro;5,73</span>
+                <div class="new_price">&euro;4,50 <span>l'uno</span></div>
+              </div>
+              <div class="purchase_item">
+                <div class="d_flex select_qnt">
+                  <div class="desc_prod">
+                    <p>Formaggio di pecora - Valle del Sole</p>
+                    <p>Porzione da 500 gr</p>
+                  </div>
+                  <div class="input_nmb d_flex">
+                    <div class="incrmnt_nmb"> + </div>
+                    <input type="number" min="0" value="0">
+                    <div class="decrmnt_nmb"> - </div>
+                  </div>
+                </div>
+                <span class="old_price">&euro;6,84</span>
+                <div class="new_price">&euro;5,10 <span>a porzione</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- /offerte -->
+
+          <!-- prodotto 1 -->
+          <div id="prdct1_title">
+            <div class="container">
+              <h4>Confetture (3)</h4>
+            </div>
+          </div>
+          <div id="prdct1_lst">
+            <div class="container">
+              <div class="purchase_item">
+                <div class="d_flex select_qnt">
+                  <div class="desc_prod">
+                    <p>Composta Sibilla di Norcia di Prugne senza zucchero - Vasetto da 350 gr</p>
+                  </div>
+                  <div class="input_nmb d_flex">
+                    <div class="incrmnt_nmb"> + </div>
+                    <input type="number" min="0" value="0">
+                    <div class="decrmnt_nmb"> - </div>
+                  </div>
+                </div>
+                <small>Ingredienti: Prugne* 70%, concentrato di mele, gelificante: pectina, correttore di acidit&agrave;: acido citrico. *Da agricoltura biologica</small>
+                <div class="new_price">&euro;5,73 <span>l'uno</span></div>
+              </div>
+              <div class="purchase_item">
+                <div class="d_flex select_qnt">
+                  <div class="desc_prod">
+                    <p>Composta Sibilla di Norcia di Pesche senza zucchero - Vasetto da 350 gr</p>
+                  </div>
+                  <div class="input_nmb d_flex">
+                    <div class="incrmnt_nmb"> + </div>
+                    <input type="number" min="0" value="0">
+                    <div class="decrmnt_nmb"> - </div>
+                  </div>
+                </div>
+                <small>Ingredienti: Pesche* 70%, concentrato di mele, gelificante: pectina, correttore di acidit&agrave;: acido citrico. *Da agricoltura biologica</small>
+                <div class="new_price">&euro;5,73 <span>l'uno</span></div>
+              </div>
+              <div class="purchase_item">
+                <div class="d_flex select_qnt">
+                  <div class="desc_prod">
+                    <p>Composta Sibilla di Norcia di Fragole senza zucchero - Vasetto da 350 gr</p>
+                  </div>
+                  <div class="input_nmb d_flex">
+                    <div class="incrmnt_nmb"> + </div>
+                    <input type="number" min="0" value="0">
+                    <div class="decrmnt_nmb"> - </div>
+                  </div>
+                </div>
+                <small>Ingredienti: Fragole* 70%, concentrato di mele, gelificante: pectina, correttore di acidit&agrave;: acido citrico. *Da agricoltura biologica</small>
+                <div class="new_price">&euro;5,73 <span>l'uno</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- /prodotto 1 -->
+
+          <!-- prodotto 2 -->
+          <div id="prdct2_title">
+            <div class="container">
+              <h4>Lenticchie (5)</h4>
+            </div>
+          </div>
+          <div id="prdct2_lst">
+            <div class="container">
+              <div class="purchase_item">
+                <div class="d_flex select_qnt">
+                  <div class="desc_prod">
+                    <p>Lenticchia di San Benedetto (Norcia) - </p>
+                    <p>Confezione da 500 gr</p>
+                  </div>
+                  <div class="input_nmb d_flex">
+                    <div class="incrmnt_nmb"> + </div>
+                    <input type="number" min="0" value="0">
+                    <div class="decrmnt_nmb"> - </div>
+                  </div>
+                </div>
+                <div class="new_price">&euro;4,46 <span>al pezzo</span></div>
+              </div>
+              <div class="purchase_item">
+                <div class="d_flex select_qnt">
+                  <div class="desc_prod">
+                    <p>Lenticchia I.G.P di Castelluccio - </p>
+                    <p>Confezione da 500 gr</p>
+                  </div>
+                  <div class="input_nmb d_flex">
+                    <div class="incrmnt_nmb"> + </div>
+                    <input type="number" min="0" value="0">
+                    <div class="decrmnt_nmb"> - </div>
+                  </div>
+                </div>
+                <div class="new_price">&euro;6,79 <span>al pezzo</span></div>
+              </div>
+              <div class="purchase_item">
+                <div class="d_flex select_qnt">
+                  <div class="desc_prod">
+                    <p>Lenticchia Rossa decorticata - </p>
+                    <p>Confezione da 500 gr</p>
+                  </div>
+                  <div class="input_nmb d_flex">
+                    <div class="incrmnt_nmb"> + </div>
+                    <input type="number" min="0" value="0">
+                    <div class="decrmnt_nmb"> - </div>
+                  </div>
+                </div>
+                <div class="new_price">&euro;4,77 <span>al pezzo</span></div>
+              </div>
+              <div class="purchase_item">
+                <div class="d_flex select_qnt">
+                  <div class="desc_prod">
+                    <p>Lenticchia in vetro - </p>
+                    <p>Confezione da 500 gr</p>
+                  </div>
+                  <div class="input_nmb d_flex">
+                    <div class="incrmnt_nmb"> + </div>
+                    <input type="number" min="0" value="0">
+                    <div class="decrmnt_nmb"> - </div>
+                  </div>
+                </div>
+                <div class="new_price">&euro;1,27 <span>al pezzo</span></div>
+              </div>
+              <div class="purchase_item">
+                <div class="d_flex select_qnt">
+                  <div class="desc_prod">
+                    <p>Lenticchia Pomilia - </p>
+                    <p>Confezione da 500 gr</p>
+                  </div>
+                  <div class="input_nmb d_flex">
+                    <div class="incrmnt_nmb"> + </div>
+                    <input type="number" min="0" value="0">
+                    <div class="decrmnt_nmb"> - </div>
+                  </div>
+                </div>
+                <div class="new_price">&euro;1,27 <span>al pezzo</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- /prodotto 2 -->
+          <div class="container payment_lnk">
+            <a class="check_pay" href="#">Vai al tuo carrello</a>
+          </div>
+        </section>
+        <!-- /PURCHASE PRODUCTS SECTION -->
+
+        <!-- ASK A QUESTION SECTION -->
+        <section id="ask_me">
+          <div class="container">
+            <h4>Hai domande, dubbi o curiosit&agrave;?</h4>
+            <p>Faccelo sapere! Chiamaci al numero:</p>
+            <a href="#"><i class="fas fa-phone"></i> 333 333 33 33</a>
+          </div>
+        </section>
+        <!-- /ASK A QUESTION SECTION -->
+        <a class="back_to_top" href="#back_top"><i class="fas fa-angle-up"></i></a>
+      </main>
+      <!-- /MAIN -->
+
+      <!-- FOOTER -->
+      <footer>
+
+        <div class="container">
+          <div class="d_flex footer_lnks">
+            <div class="hdr_logo">
+              <img src="images/favicon-32x32.png" alt="Logo Daje">
+              <a href="index.html">DAJE!</a>
+            </div>
+            <div class="lst_footer d_flex">
+              <div class="list_who">
+                <h4>Chi siamo</h4>
+                <ul class="lst_item_lnk">
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="list_who">
+                <h4>Contatti</h4>
+                <ul class="lst_item_lnk">
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="list_who">
+                <h4>FAQ</h4>
+                <ul class="lst_item_lnk">
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                  <li>
+                    <a href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <small>copyright reserved DAJE!</small>
+          <small class="address_site">Roma, 00000</small>
+        </div>
+
+      </footer>
+      <!-- /FOOTER -->
+    </body>
+
+  </html>
